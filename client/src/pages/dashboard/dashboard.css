@@ -1,0 +1,865 @@
+.mainDashboardContainer {
+    max-width: 1535px;
+    min-height: 90vh;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    background-color: #fbfdff;
+    position: relative;
+}
+
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu {
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: rgba(62, 29, 29, 0.05) 2px 4px 9px;
+}
+
+.menuContainer {
+    flex: 6;
+}
+
+.menu,
+.menuContainer {
+    padding: 20px;
+}
+
+.totalDetails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.totalDetail {
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: rgba(203, 203, 203, 0.05) 2px 4px 9px;
+}
+
+.totalDetail .icon {
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.totalDetail:nth-child(1) .icon {
+    background-color: #ff6270;
+}
+
+.totalDetail:nth-child(2) .icon {
+    background-color: #fe764b;
+}
+
+.totalDetail:nth-child(3) .icon {
+    background-color: #ffde6a;
+}
+
+.totalDetail:nth-child(4) .icon {
+    background-color: #70cf98;
+}
+
+.totalDetail h3 {
+    text-align: left;
+}
+
+.charts {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 99.99% !important;
+    height: auto;
+    gap: 20px;
+}
+
+.chartContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(203, 203, 203, 0.05) 2px 4px 9px;
+}
+
+.earningChart {
+    flex: 9;
+    min-width: 0;
+}
+
+.barChart {
+    flex: 4;
+    min-width: 0;
+}
+
+.appointmentHeading p {
+    color: #828ea2;
+    font-weight: 500;
+}
+
+.allAppointmentsContainer {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.appointmentsTable {
+    flex: 9;
+}
+
+.appointmentHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointmentHead button {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointmentsReview {
+    flex: 4;
+}
+
+.appointmentsTable,
+.appointmentsReview {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(203, 203, 203, 0.05) 2px 4px 9px;
+}
+
+.dashboardProfileContainer {
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: rgba(203, 203, 203, 0.05) 2px 4px 9px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(203, 203, 203, 0.05) 2px 4px 9px;
+}
+
+.dashboardProfile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.dashboardProfile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dashboardProfile p {
+    color: #6b7280;
+}
+
+.editIcon {
+    font-size: 20px;
+    color: #6b7280;
+    background-color: #f4f4f5;
+    padding: 5px 6px 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.editIcon:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.dashboardUserContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+}
+
+.dashboardUserContactDetails {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboardUserContactDetails p:nth-child(1) {
+    font-weight: 500;
+}
+
+.dashboardUserContactDetails .icon,
+.dashboardUserContactDetails p:nth-child(2) {
+    color: #6b7280;
+}
+
+.dashboardCalenderContainer {
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: rgba(203, 203, 203, 0.05) 2px 4px 9px;
+    height: 800px;
+}
+
+.dashboardCalenderHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createIcon {
+    font-size: 20px;
+    color: #6b7280;
+    background-color: #f4f4f5;
+    padding: 5px 6px 2px 6px;
+    border-radius: 50%;
+}
+
+.createIcon:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+/**************************************************************/
+.react-calender {
+    width: 100% !important;
+    border: none !important;
+}
+
+.react-calender_navigation_label_labelText {
+    font-weight: 600;
+}
+
+.react-calender__title--active {
+    background-color: #c3ebfa !important;
+    color: black !important;
+}
+
+.rbc-day-slot .rbc-events-container {
+    overflow-x: hidden !important;
+    margin-right: 0px !important;
+}
+
+.rbc-time-view {
+    border-radius: 5px;
+}
+
+.rbc-btn-group:first-child {
+    /* display: none !important; */
+}
+
+.rbc-btn-group:first-child button {
+    border: none !important;
+    background-color: #f1f0ff !important;
+    margin-left: 2px !important;
+}
+
+
+.rbc-toolbar button.rbc-active {
+    background-color: #dbdafe !important;
+    box-shadow: none !important;
+}
+
+.rbc-time-view .rbc-allday-cell {
+    display: none !important;
+}
+
+.rbc-today {
+    background-color: #f7fdff;
+}
+
+.rbc-header {
+    padding: 5px 0 !important;
+    border-bottom: none !important;
+    font-weight: 500 !important;
+}
+
+.rbc-toolbar-label {
+    /* text-align: right !important; */
+    padding: 0px 20px !important;
+}
+
+.rbc-btn-group:last-child {
+    font-size: 13px !important;
+}
+
+.rbc-btn-group:last-child button {
+    border: none !important;
+    background-color: #f1f0ff !important;
+    margin-left: 2px !important;
+}
+
+
+.rbc-toolbar button.rbc-active {
+    background-color: #dbdafe !important;
+    box-shadow: none !important;
+}
+
+.rbc-time-view {
+    border-color: #eee !important;
+}
+
+
+.rbc-time-content {
+    border: none !important;
+}
+
+.rbc-time-gutter.rbc-time-column {
+    font-size: 12px !important;
+}
+
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+    padding: 0px 20px !important;
+}
+
+.rbc-timeslot-group {
+    background-color: #f7fdff !important;
+}
+
+.rbc-day-slot {
+    font-size: 14px !important;
+}
+
+.rbc-day-slot .rbc-event-content {
+    color: #282828;
+    font-size: 13px;
+}
+
+.rbc-event {
+    border: none !important;
+    color: black !important;
+    padding: 10px !important;
+    width: 103% !important;
+    height: 55px !important;
+}
+
+.rbc-event:nth-child(8n + 1) {
+    background-color: #e2f8ff !important;
+}
+
+.rbc-event:nth-child(8n + 2) {
+    background-color: #fefce8 !important;
+}
+
+.rbc-event:nth-child(8n + 3) {
+    background-color: #f2f1ff !important;
+}
+
+.rbc-event:nth-child(8n + 4) {
+    background-color: #fdf2fb !important;
+}
+
+.rbc-event:nth-child(8n + 5) {
+    background-color: #e2f8ff !important;
+}
+
+.rbc-event:nth-child(8n + 6) {
+    background-color: #fefce8 !important;
+}
+
+.rbc-event:nth-child(8n + 7) {
+    background-color: #f2f1ff !important;
+}
+
+.rbc-event:nth-child(8n + 8) {
+    background-color: #fdf2fb !important;
+}
+
+.rbc-event-label {
+    color: gray !important;
+    margin-bottom: 5px !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody>tr>td {
+    background-color: #f7fdff !important;
+    font-size: 14px !important;
+    padding-top: 10px !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody>tr>td+td,
+.rbc-agenda-view table.rbc-agenda-table thead>tr>th {
+    padding: 10px 10px !important;
+    padding: 10px 10px;
+    font-size: 14px !important;
+}
+
+.rbc-header {
+    font-weight: 400 !important;
+}
+
+.rbc-agenda-time-cell {
+    border-left: 0.5px solid #dddd !important;
+}
+
+.rbc-agenda-table {
+    border: 1px solid #dddddd;
+}
+
+/**************************************************************/
+.dashboardReviews {
+    display: flex;
+    gap: 15px;
+}
+
+.dashboardReview {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.dashboardReviewStats {
+    flex: 1;
+}
+
+.reviews {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #eaeaec;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dashboardAllReview {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.reviewProfile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviewProfile p {
+    color: #6b7280;
+}
+
+.reviewProfile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewStarDetails {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.userRating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d9792;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 2px;
+    padding: 1px 4px;
+    text-align: center;
+    gap: 2px;
+}
+
+.userRating p,
+.userRating>.icon {
+    font-size: 12px;
+    color: white !important;
+}
+
+.userRating>.icon {
+    font-size: 8px;
+}
+
+.reviewDetails p:nth-child(2),
+.allReview .icon {
+    color: #6b7280;
+}
+
+.reviewDetails {
+    display: grid;
+    gap: 10px;
+}
+
+.reviewAndRating {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.reviewAndRating span {
+    width: 1.5px;
+    background: #cbcbcb;
+    height: 100px !important;
+}
+
+.totalReview {
+    text-align: center;
+}
+
+.totalReview p:nth-child(1) {
+    font-size: 35px;
+}
+
+.review {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.totalReview p,
+.review p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.review-1 {
+    padding: 0 0 0 4px;
+}
+
+.progressBar {
+    width: 100px;
+    height: 3px;
+    background-color: #cbcbcb;
+    overflow: hidden;
+    position: relative;
+}
+
+.review p {
+    color: #6b7280;
+}
+
+.review .icon {
+    color: #6b7280;
+    font-size: 10px;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #14958f;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.star-5 {
+    background-color: #14958f;
+}
+
+.star-4 {
+    background-color: #14958f;
+}
+
+.star-3 {
+    background-color: #72bfbc;
+}
+
+.star-2 {
+    background-color: #fcb301;
+}
+
+.star-1 {
+    background-color: #f16565;
+}
+
+.deleteSetting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.deleteIcon {
+    font-size: 24px;
+    color: #616161;
+    cursor: pointer;
+}
+
+.deleteIcon:hover {
+    color: #fe0000d1;
+}
+
+/**************************************************************/
+.staffMembers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.staffMembers span {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.staffSearchBox {
+    position: relative;
+}
+
+.staffSearchBox input {
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    font-size: 24px;
+    top: 6px;
+    right: 6px;
+}
+
+.noData {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noData p {
+    color: #c2c2c2;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    .menu {
+        flex: 0;
+    }
+
+    .totalDetail {
+        padding: 10px;
+    }
+
+    .totalDetails {
+        gap: 10px;
+    }
+
+    .menu,
+    .menuContainer {
+        padding: 15px;
+    }
+
+    .allAppointmentsContainer {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .menu {
+        flex: 0;
+    }
+
+    .totalDetails {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .charts {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .earningChart,
+    .barChart {
+        width: 100%;
+    }
+
+    .chart canvas {
+        height: 350px !important;
+    }
+
+    .allAppointmentContainer,
+    .allAppointmentsContainer {
+        flex-direction: column;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .dashboardUserContact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .reviewDetails {
+        gap: 5px;
+    }
+
+    .allReview {
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dashboardReviews {
+        flex-direction: column-reverse;
+    }
+
+    .dashboardReviewStats {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboardAllReview {
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .reviewAndRating {
+        gap: 25px !important;
+    }
+
+    .dashboardReview {
+        padding: 0;
+    }
+
+    .searchContainer {
+        gap: 10px;
+    }
+
+    .reviewProfile img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .noData p {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width:574px) {
+    .totalDetails {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .earningChart,
+    .barChart {
+        width: 99%;
+    }
+
+    .noData p {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .dashboardProfileContainer {
+        padding: 30px 20px;
+    }
+
+    .rbc-toolbar {
+        gap: 10px;
+    }
+
+    .staffMembers span {
+        display: none;
+    }
+
+    .editIcon {
+        right: -19px;
+        top: -15px;
+    }
+
+    .menu,
+    .menuContainer {
+        padding: 10px;
+    }
+
+    tr {
+        font-size: 14px;
+    }
+
+    td .icon,
+    .staffIcon {
+        font-size: 25px !important;
+    }
+
+    .cancelled,
+    .completed {
+        font-size: 12px;
+    }
+
+    .searchIcon {
+        font-size: 20px;
+        top: 9px;
+    }
+
+    .searchContainer,
+    .staffSearchBox {
+        width: 100%;
+    }
+
+    .totalDetail .icon {
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .noData p {
+        font-size: 15px !important;
+    }
+
+    .rbc-label {
+        width: 63.9px;
+        min-width: 63.9px;
+        max-width: 63.9px;
+    }
+
+    .rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+        padding: 0 !important;
+    }
+}

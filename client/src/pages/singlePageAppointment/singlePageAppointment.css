@@ -1,0 +1,381 @@
+.mainAppointmentSingleContainer {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.appointmentSingleContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.appointmentHeader {
+    flex: 1;
+    text-align: left;
+    padding: 20px 20px 0 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointmentHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.appointmentHeader h3 {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.appointmentImage {
+    width: 100%;
+    height: 350px;
+    align-items: center;
+}
+
+.appointmentImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.appointmentRatingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.appointmentRatingAndReview {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.appointmentTotalReview {
+    color: #6b7280;
+}
+
+.appointmentRating {
+    display: flex;
+    gap: 2px;
+    font-weight: 700;
+}
+
+.ratingIcon {
+    color: #facc15;
+}
+
+.appointmentDetail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.appointmentServicesContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.appointmentDetailCard {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.allService p:nth-child(1),
+.appointmentDetailCard p:nth-child(1) {
+    font-weight: 500;
+}
+
+.appointmentDetailCard .icon,
+.allService p:nth-child(2),
+.appointmentDetailCard p:nth-child(2) {
+    color: #6b7280;
+}
+
+.allServicesContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.allServicesContainer h3 {
+    text-align: left;
+}
+
+.allServices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 10px;
+    border: 1px solid #dddddd;
+    width: 50%;
+}
+
+.allServicesHeading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 8px;
+}
+
+.allService {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.allService p:first-child {
+    text-transform: capitalize;
+}
+
+.allService p:last-child {
+    font-weight: 600;
+}
+
+.allReviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.reviewContainer {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.allReviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.allReview {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid #eaeaec;
+    padding-bottom: 20px;
+}
+
+.reviewProfile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviewProfile p {
+    color: #6b7280;
+}
+
+.reviewProfile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewStarDetails {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.userRating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d9792;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 2px;
+    padding: 1px 4px;
+    text-align: center;
+    gap: 2px;
+}
+
+.userRating p,
+.userRating>.icon {
+    font-size: 12px;
+    color: white !important;
+}
+
+.userRating>.icon {
+    font-size: 8px;
+}
+
+.reviewDetails p:nth-child(2),
+.allReview .icon {
+    color: #6b7280;
+}
+
+.reviewDetails {
+    display: grid;
+    gap: 10px;
+}
+
+.reviewAndRating {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.reviewAndRating span {
+    width: 1.5px;
+    background: #cbcbcb;
+    height: 100%;
+}
+
+.totalReview {
+    text-align: center;
+}
+
+.totalReview p:nth-child(1) {
+    font-size: 35px;
+}
+
+.review {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.review-1 {
+    padding: 0 0 0 4px;
+}
+
+.progressBar {
+    width: 100px;
+    height: 3px;
+    background-color: #cbcbcb;
+    overflow: hidden;
+    position: relative;
+}
+
+.review p {
+    color: #6b7280;
+}
+
+.review .icon {
+    color: #6b7280;
+    font-size: 10px;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #14958f;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.star-5 {
+    background-color: #14958f;
+}
+
+.star-4 {
+    background-color: #14958f;
+}
+
+.star-3 {
+    background-color: #72bfbc;
+}
+
+.star-2 {
+    background-color: #fcb301;
+}
+
+.star-1 {
+    background-color: #f16565;
+}
+
+.ratingCount {
+    width: max-content;
+}
+
+@media screen and (max-width:768px) {
+    .appointmentSingleContainer {
+        gap: 5px;
+    }
+
+    .appointmentServicesContainer {
+        flex-direction: column;
+    }
+
+    .map {
+        height: 280px;
+    }
+
+    .appointmentHeader {
+        padding: 20px 0 0 0;
+    }
+
+    .mainAppointmentSingleContainer {
+        gap: 0px;
+    }
+
+    .reviewContainer {
+        flex-direction: column-reverse;
+    }
+
+    .reviewAndRating {
+        padding: 0 20px;
+    }
+
+    .allServices {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .appointmentHeader {
+        padding: 20px 10px 0 10px;
+    }
+
+    .appointmentDetail {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .appointmentImage {
+        height: 280px;
+    }
+
+    .reviewContainer {
+        gap: 20px;
+    }
+
+    .appointmentSingleContainer {
+        padding: 15px;
+    }
+
+    .allReviews {
+        padding: 0 15px;
+    }
+
+    .allReview {
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,13 @@
+.mainProfileContainer {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fafcfe;
+}
+
+@media screen and (max-width:768px) {
+    .mainProfileContainer {
+        gap: 20px;
+    }
+}

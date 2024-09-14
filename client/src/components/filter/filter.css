@@ -1,0 +1,120 @@
+.filterSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+
+.filterHeader button {
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #eef7ff;
+}
+
+.filterBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e4e4e7;
+}
+
+.filterTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.filterTitle p:hover {
+    text-decoration: underline;
+}
+
+.filterSize {
+    display: flex;
+    gap: 10px;
+}
+
+.filterSizeBox {
+    border: 1px solid;
+    border-radius: 72%;
+    text-align: center;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+}
+
+.filterLabel {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.filterLabel label {
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filterLabel input {
+    border: none !important;
+    border-radius: 1px !important;
+    cursor: pointer;
+}
+
+.FilterArrow {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterArrowIcons {
+    display: none;
+}
+
+.subActive {
+    visibility: visible;
+}
+
+.subNotActive {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .active {
+        visibility: visible;
+    }
+
+    .notActive {
+        display: none;
+    }
+
+    .filterArrowIcons {
+        visibility: visible;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        color: #363636;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    .filterSection {
+        width: 100%;
+    }
+}

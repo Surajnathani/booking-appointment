@@ -1,0 +1,129 @@
+.mainContactContainer {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.subContactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.contact h3 {
+    text-align: start;
+}
+
+.addressDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.addressDetail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+form input {
+    width: 100%;
+
+}
+
+form span {
+    display: flex;
+    gap: 10px;
+}
+
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    form span {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subContactContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 20px;
+        width: -webkit-fill-available;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .subContactContainer {
+        padding: 0 5px;
+    }
+
+    .contactContainer p {
+        text-align: center;
+    }
+
+    .addressDetails {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .contactContainer {
+        gap: 20px;
+    }
+}

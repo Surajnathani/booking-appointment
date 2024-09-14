@@ -1,0 +1,159 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 15px 0;
+    white-space: nowrap;
+}
+
+tr .icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+td .icon {
+    font-size: 30px;
+}
+
+td .icon:nth-child(1) {
+    color: #ff6270;
+}
+
+td .icon:nth-child(2) {
+    color: #70cf98;
+}
+
+.complete,
+.rejected,
+.fullTime,
+.partTime {
+    padding: 3px 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.complete,
+.fullTime {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.inProgress {
+    background-color: #deeafd;
+    color: #3b82f6;
+}
+
+.rejected {
+    background-color: #fdd7d7;
+    color: #dd0000;
+}
+
+.partTime {
+    background-color: #fbe5bf;
+    color: #f3a760;
+}
+
+.onGoing {
+    display: flex;
+    gap: 5px;
+}
+
+.tableName {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.smallImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.staffAction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.staffIcon {
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.staffIcon:nth-child(1) {
+    background-color: #fdd7d7;
+    color: #dd0000;
+}
+
+.staffIcon:nth-child(2) {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+@media screen and (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        top: 15px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:before {
+        font-weight: 600 !important;
+    }
+
+    .smallImage {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    td {
+        border: none;
+        position: relative;
+        padding-left: 35%;
+    }
+}

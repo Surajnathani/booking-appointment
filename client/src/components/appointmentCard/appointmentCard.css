@@ -1,0 +1,114 @@
+.allAppointmentContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.allData {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #cbcbcb;
+    padding: 30px 25px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.subData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subLocationData {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dataIcon {
+    display: grid;
+    place-items: center;
+    background-color: #f4f4f5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.dataIcon .locationIcon {
+    font-size: 25px;
+}
+
+.complete,
+.inProgress,
+.rejected,
+.pending {
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+.complete {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.inProgress {
+    background-color: #deeafd;
+    color: #3b82f6;
+
+}
+
+.rejected {
+    background-color: #fdd7d7;
+    color: #dd0000;
+}
+
+.pending {
+    background-color: #fded94;
+    color: #97732b;
+}
+
+.subLocationData p:nth-child(1) {
+    font-weight: 500;
+}
+
+.subData p:nth-child(2),
+.subLocationData p:nth-child(2) {
+    color: #6b7280;
+}
+
+.cancelBtn {
+    padding: 3px;
+    cursor: pointer;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    width: 28px;
+    height: 28px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1024px) {
+    .allAppointmentContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .allAppointmentContainer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .cancelBtn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .allData {
+        padding: 20px
+    }
+}

@@ -1,0 +1,58 @@
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.errorHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 3;
+}
+
+.errorHeader h1 {
+    text-align: left;
+}
+
+.errorHeader span {
+    color: #3592ff;
+}
+
+.errorHeader p {
+    font-size: 18px;
+}
+
+.errorHeader p:last-child {
+    padding-top: 40px;
+    color: #696969;
+}
+
+.errorImage {
+    flex: 2;
+}
+
+.notFoundImg {
+    width: 300px;
+    height: max-content;
+}
+
+@media (max-width: 768px) {
+    .errorContainer {
+        flex-direction: column-reverse;
+    }
+
+    .notFoundImg {
+        width: 200px;
+    }
+
+    .errorHeader p:last-child {
+        padding-top: 20px;
+    }
+}

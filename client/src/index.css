@@ -1,0 +1,261 @@
+@import url('non.geist');
+
+/* #3592ff */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Geist Variable';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.icon {
+    font-size: 20px;
+    color: #333;
+}
+
+.largeIcon {
+    font-size: 30px;
+    color: #333;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+}
+
+h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+h5 {
+    font-size: 18px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+.btn,
+.outlineBtn {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #3592ff;
+    color: #FFFFFF;
+}
+
+.outlineBtn {
+    background-color: #ffffff;
+    color: #3592ff;
+    border: 1px solid #3592ff;
+}
+
+.btn:hover {
+    background-color: #1b71f5;
+}
+
+.outlineBtn:hover {
+    background-color: #ffffff;
+    color: #145be1;
+    border: 1px solid #145be1;
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.btn:disabled,
+.outlineBtn:disabled {
+    background-color: #d9edff;
+    color: #59b1ff;
+    cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #d9edff;
+    border-radius: 10px;
+    resize: none;
+}
+
+input[type=radio] {
+    padding: 0.4em;
+    -webkit-appearance: none;
+    outline: 0.1em solid #142857;
+}
+
+input[type=radio]:checked {
+    display: inline-block;
+    background-color: #142857;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-radius: 10px;
+    border: 1px solid #d9edff;
+    box-shadow: rgb(53, 146, 255, 0.2) 2px 4px 9px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.custom-toast {
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3,
+    .largeIcon {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5,
+    p,
+    label,
+    a,
+    .btn,
+    .outlineBtn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3,
+    .largeIcon {
+        font-size: 25px;
+    }
+
+    h4,
+    a {
+        font-size: 15px;
+    }
+
+    h5,
+    p,
+    label,
+    .btn,
+    .outlineBtn {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3,
+    .largeIcon {
+        font-size: 20px;
+    }
+
+    h4,
+    a {
+        font-size: 14px;
+    }
+
+    h5,
+    p,
+    label,
+    .btn,
+    .outlineBtn {
+        font-size: 13px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+}

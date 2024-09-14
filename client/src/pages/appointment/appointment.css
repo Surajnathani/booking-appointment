@@ -1,0 +1,98 @@
+.mainAppointmentContainer {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.appointmentContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1535px;
+    min-height: 90vh;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.leftAppointmentContainer {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-right: 0.5px solid #f0f0f0;
+}
+
+.rightAppointmentContainer {
+    flex: 5;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.searchContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.searchAppointment {
+    width: 100%;
+}
+
+.subContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.searchBtn {
+    border: 1px solid #d9edff;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+/*     height: 100vh; */
+/*     overflow-y: scroll; */
+}
+
+@media screen and (max-width:1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .appointmentContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding: 10px;
+    }
+
+    .leftAppointmentContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px 10px;
+        border: none;
+    }
+
+    .cards {
+        height: -webkit-fill-available;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
