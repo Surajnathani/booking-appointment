@@ -13,6 +13,10 @@
   <img src="client/public/assets/10.png" alt="Booking Platform Screenshot" width="400" margin="100px" />
 </div>
 
+- for demo: <br/>
+email: demo123@gmail.com <br/>
+password: Password@123
+
 ## Introduction
 
 The Booking Appointment Platform is a comprehensive web application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Redux for state management and RTK Query for API integration. This platform allows users to book appointments, create profiles, manage their schedules, and provide services as professionals. The back-end integrates with MongoDB for user management and Cloudinary for image storage.
