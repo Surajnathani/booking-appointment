@@ -1,8 +1,12 @@
 # dependencies
 /node_modules
 
-# local env files
+# Ignore real environment files
 .env
+
+# Don't ignore .env.sample
+!.env.sample
+
 
 
 # Log files

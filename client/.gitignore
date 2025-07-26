@@ -12,8 +12,12 @@ dist
 dist-ssr
 *.local
 
-# Environment variables
-*.env
+# Ignore real environment files
+.env
+
+# Don't ignore .env.sample
+!.env.sample
+
 
 # Editor directories and files
 .vscode/*
